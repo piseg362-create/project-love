@@ -42,8 +42,10 @@ export default function Home() {
         <SweetKissSection />
         <InteractiveMoments />
         <NightSkyEnding />
-        <MusicPlayer />
       </div>
+
+      {/* Floating Music Player with autoPlay triggered when unlocking world */}
+      <MusicPlayer autoPlay={hasEntered} />
     </main>
   );
 }

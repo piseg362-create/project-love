@@ -10,21 +10,19 @@ import {
   ChevronUp,
   ChevronDown,
   ExternalLink,
-  Sparkles,
   Heart,
   Eye,
   EyeOff,
 } from "lucide-react";
 import { siteContent } from "@/data/content";
 
-export default function MusicPlayer() {
+export default function MusicPlayer({ autoPlay = false }) {
   const { audio } = siteContent;
   const [isPlaying, setIsPlaying] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [showVideo, setShowVideo] = useState(false);
   const [apiReady, setApiReady] = useState(false);
   const playerRef = useRef(null);
-  const containerRef = useRef(null);
 
   useEffect(() => {
     // Load YouTube IFrame API script
@@ -43,7 +41,7 @@ export default function MusicPlayer() {
           playerRef.current = new window.YT.Player("youtube-music-player", {
             videoId: audio.youtubeVideoId,
             playerVars: {
-              autoplay: 0,
+              autoplay: 1, // autoplay by default
               controls: 1,
               playsinline: 1,
               rel: 0,
@@ -51,8 +49,12 @@ export default function MusicPlayer() {
               origin: window.location.origin,
             },
             events: {
-              onReady: () => {
+              onReady: (event) => {
                 setApiReady(true);
+                // Attempt to play on ready
+                try {
+                  event.target.playVideo();
+                } catch {}
               },
               onStateChange: (event) => {
                 // 1 = PLAYING, 2 = PAUSED, 0 = ENDED
@@ -85,6 +87,36 @@ export default function MusicPlayer() {
     };
   }, [audio.youtubeVideoId]);
 
+  // When autoPlay prop changes (e.g. Srushti unlocks the welcome screen)
+  useEffect(() => {
+    if (autoPlay && playerRef.current && typeof playerRef.current.playVideo === "function") {
+      try {
+        playerRef.current.playVideo();
+      } catch {}
+    }
+  }, [autoPlay]);
+
+  // Fallback: On the first user gesture anywhere, start playing if not playing yet
+  useEffect(() => {
+    const handleFirstUserInteraction = () => {
+      if (playerRef.current && typeof playerRef.current.playVideo === "function") {
+        try {
+          playerRef.current.playVideo();
+        } catch {}
+      }
+      window.removeEventListener("click", handleFirstUserInteraction);
+      window.removeEventListener("touchstart", handleFirstUserInteraction);
+    };
+
+    window.addEventListener("click", handleFirstUserInteraction, { once: true });
+    window.addEventListener("touchstart", handleFirstUserInteraction, { once: true });
+
+    return () => {
+      window.removeEventListener("click", handleFirstUserInteraction);
+      window.removeEventListener("touchstart", handleFirstUserInteraction);
+    };
+  }, []);
+
   const toggleMusic = () => {
     if (playerRef.current && typeof playerRef.current.playVideo === "function") {
       if (isPlaying) {
@@ -95,7 +127,7 @@ export default function MusicPlayer() {
         setIsPlaying(true);
       }
     } else {
-      // If player wasn't initialized yet, expand the widget so user can interact directly
+      // If player wasn't initialized yet, expand widget
       setIsExpanded(true);
       setShowVideo(true);
     }
