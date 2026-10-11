@@ -24,6 +24,7 @@ export default function Navbar() {
     { name: "A Letter", href: "#letter" },
     { name: "Why You're Special", href: "#reasons" },
     { name: "Our Story", href: "#timeline" },
+    { name: "Sweet Kiss 💋", href: "#kiss-moment" },
     { name: "A Little Hug", href: "#interactive" },
   ];
 

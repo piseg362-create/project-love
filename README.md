@@ -57,6 +57,16 @@ All photos are organized in the `/public/images/` folder. Simply copy your actua
 
 ---
 
+## 💋 How to Add Srushti's Kiss Video
+
+To add the video where Srushti sends a sweet kiss:
+1. Copy your video clip into the **`/public/videos/`** folder.
+2. Name the file:
+   **`srushti-kiss.mp4`** *(or `.mov` / `.webm`)*.
+3. The video section will automatically play with custom controls (play/pause, mute/unmute, and fullscreen), with a "Catch The Kiss 💋" interactive reaction button!
+
+---
+
 ## 🎵 How to Add Custom Background Music (Optional)
 
 If you'd like to use a specific romantic song or piano piece:

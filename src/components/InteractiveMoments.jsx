@@ -75,22 +75,30 @@ export default function InteractiveMoments() {
             “No expectations, no pressure. Just a quiet space for warmth whenever you need it.”
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
             {/* Hug Button */}
             <button
               onClick={triggerHug}
               type="button"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-rose-500 to-rose-600 text-white font-medium text-base shadow-lg shadow-rose-500/25 hover:shadow-xl hover:shadow-rose-500/35 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-gradient-to-r from-rose-500 to-rose-600 text-white font-medium text-base shadow-lg shadow-rose-500/25 hover:shadow-xl hover:shadow-rose-500/35 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-300"
             >
               <Smile className="w-5 h-5" />
               <span>{interactive.hugButtonText}</span>
             </button>
 
+            {/* Srushti's Kiss Video Shortcut */}
+            <a
+              href="#kiss-moment"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-blush-100 hover:bg-blush-200 text-rose-800 border border-rose-200 font-medium text-base shadow-sm hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-300"
+            >
+              <span>{interactive.kissButtonText}</span>
+            </a>
+
             {/* Note Button */}
             <button
               onClick={handleOpenNote}
               type="button"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-white text-stone-800 border border-rose-200 font-medium text-base shadow-sm hover:bg-rose-50/70 hover:border-rose-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-200"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-white text-stone-800 border border-rose-200 font-medium text-base shadow-sm hover:bg-rose-50/70 hover:border-rose-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-200"
             >
               <Mail className="w-5 h-5 text-rose-500" />
               <span>{interactive.noteButtonText}</span>

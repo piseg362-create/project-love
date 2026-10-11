@@ -8,6 +8,7 @@ import MemoryGallery from "@/components/MemoryGallery";
 import LetterSection from "@/components/LetterSection";
 import ReasonsSection from "@/components/ReasonsSection";
 import TimelineSection from "@/components/TimelineSection";
+import SweetKissSection from "@/components/SweetKissSection";
 import InteractiveMoments from "@/components/InteractiveMoments";
 import NightSkyEnding from "@/components/NightSkyEnding";
 import MusicPlayer from "@/components/MusicPlayer";
@@ -38,6 +39,7 @@ export default function Home() {
         <LetterSection />
         <ReasonsSection />
         <TimelineSection />
+        <SweetKissSection />
         <InteractiveMoments />
         <NightSkyEnding />
         <MusicPlayer />

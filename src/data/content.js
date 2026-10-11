@@ -207,6 +207,17 @@ export const siteContent = {
     ],
   },
 
+  kissVideo: {
+    sectionTag: "A Sweet Memory",
+    heading: "A Moment That Melts My Heart",
+    subheading: "Every time you smile or send a sweet kiss, the world stops for a second.",
+    videoSrc: "/videos/srushti-kiss.mp4",
+    poster: "/images/hero-srushti.jpg",
+    caption: "That little kiss that never fails to make me blush and smile ❤️",
+    dateBadge: "Pure Sweetness",
+    buttonLabel: "Play Srushti's Kiss 💋",
+  },
+
   interactive: {
     sectionTag: "Gentle Touches",
     heading: "A Little Interactive Moment",
@@ -214,6 +225,9 @@ export const siteContent = {
     hugButtonText: "A Little Hug for You 🤗",
     hugMessage:
       "Sending you a warm hug, a little peace, and a reminder that you deserve happiness. ❤️",
+    kissButtonText: "A Sweet Kiss from Srushti 💋",
+    kissMessage:
+      "Catching your sweet kiss and holding onto it forever in my heart! 😘✨",
     noteButtonText: "Read One More Note 💌",
     additionalNotes: [
       {
