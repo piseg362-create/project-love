@@ -101,13 +101,30 @@ export default function LetterSection() {
           </div>
 
           {/* Letter Body Paragraphs */}
-          <div className="space-y-6 text-stone-800 font-sans text-base sm:text-lg sm:leading-relaxed font-light">
+          <div className="space-y-6 text-stone-800 font-sans text-base sm:text-lg sm:leading-relaxed font-normal">
             {letter.paragraphs.map((para, index) => {
               const isVisible = index < displayedParagraphs;
+              
+              // Helper to format bold markdown **text**
+              const renderFormattedText = (text) => {
+                if (!text.includes("**")) return text;
+                const parts = text.split(/(\*\*.*?\*\*)/g);
+                return parts.map((part, i) => {
+                  if (part.startsWith("**") && part.endsWith("**")) {
+                    return (
+                      <strong key={i} className="font-semibold text-rose-950 bg-rose-50/80 px-1 py-0.5 rounded">
+                        {part.slice(2, -2)}
+                      </strong>
+                    );
+                  }
+                  return part;
+                });
+              };
+
               return (
                 <p
                   key={index}
-                  className={`transition-all duration-700 ${
+                  className={`transition-all duration-700 leading-relaxed ${
                     isVisible
                       ? "opacity-100 translate-y-0"
                       : "opacity-0 translate-y-3 pointer-events-none select-none"
@@ -116,7 +133,7 @@ export default function LetterSection() {
                     display: isVisible ? "block" : "none",
                   }}
                 >
-                  {para}
+                  {renderFormattedText(para)}
                 </p>
               );
             })}
@@ -134,14 +151,14 @@ export default function LetterSection() {
               <p className="font-serif italic text-stone-600 text-base sm:text-lg">
                 {letter.closing}
               </p>
-              <p className="font-handwriting text-3xl sm:text-4xl text-rose-700 font-semibold mt-1">
+              <p className="font-sans text-2xl sm:text-3xl text-rose-700 font-bold mt-1">
                 {letter.signature}
               </p>
             </div>
 
             {/* Wax seal simulation */}
             <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-600 to-rose-800 text-rose-100 flex items-center justify-center shadow-lg border-2 border-rose-300/40 select-none">
-              <span className="font-serif font-bold text-lg tracking-widest">C & S</span>
+              <span className="font-serif font-bold text-base tracking-widest">च & सृ</span>
             </div>
           </div>
 
