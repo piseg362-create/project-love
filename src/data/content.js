@@ -266,9 +266,11 @@ export const siteContent = {
   },
 
   audio: {
-    title: "Romantic Ambient Piano",
-    src: "/audio/romantic-melody.mp3",
-    labelOff: "Play Romantic Melody 🎵",
+    title: "Our Special Song ❤️",
+    youtubeVideoId: "xdN2gYjcWuM",
+    youtubeEmbedUrl:
+      "https://www.youtube.com/embed/xdN2gYjcWuM?si=81OmFyeK7wEheFDK&enablejsapi=1",
+    labelOff: "Play Our Song 🎵",
     labelOn: "Pause Music ⏸️",
   },
 };
