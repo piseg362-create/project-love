@@ -130,3 +130,4 @@ All texts, quotes, letters, reasons, and timeline milestones are centralized in:
 📂 **`src/data/content.js`**
 
 Open that file to update or customize any words easily without touching React components!
+# project-love
