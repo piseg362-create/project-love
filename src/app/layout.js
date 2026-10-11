@@ -2,22 +2,28 @@ import "./globals.css";
 import { siteContent } from "@/data/content";
 
 export const metadata = {
-  title: siteContent.meta.title,
-  description: siteContent.meta.description,
-  keywords: ["Srushti", "Chaitanya", "Love Story", "Memories", "Romantic Website"],
-  authors: [{ name: siteContent.meta.author }],
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://project-srushti.vercel.app"
+  ),
+  title: "माझ्या बाबुडेसाठी ❤️ | माझी नारायणी",
+  description:
+    "माझ्या लाडक्या बाबुडेसाठी, माझ्या नारायणीसाठी… प्रेम, आठवणी आणि मनापासून लिहिलेल्या शब्दांनी बनवलेलं एक छोटंसं जग. ❤️🥹",
+
+  applicationName: "माझ्या बाबुडेसाठी ❤️",
+
   openGraph: {
-    title: siteContent.meta.title,
-    description: siteContent.meta.description,
+    title: "माझ्या बाबुडेसाठी ❤️",
+    description:
+      "एक छोटीशी वेबसाइट… फक्त माझ्या बाबुडेसाठी, खूप साऱ्या प्रेमासह. ❤️🫶",
     type: "website",
-    locale: "en_US",
-    siteName: "Project Srushti",
+    images: ["/images/srushti-cover.jpg"],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: siteContent.meta.title,
-    description: siteContent.meta.description,
+
+  robots: {
+    index: false,
+    follow: false,
   },
+
   icons: {
     icon: "/icon.svg",
   },

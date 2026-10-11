@@ -3,8 +3,9 @@
 
 export const siteContent = {
   meta: {
-    title: "For Srushti ❤️ | A Little World of Love",
-    description: "A personal love story created with love by Chaitanya for Srushti.",
+    title: "माझ्या बाबुडेसाठी ❤️ | माझी नारायणी",
+    description:
+      "माझ्या लाडक्या बाबुडेसाठी, माझ्या नारायणीसाठी… प्रेम, आठवणी आणि मनापासून लिहिलेल्या शब्दांनी बनवलेलं एक छोटंसं जग. ❤️🥹",
     author: "Chaitanya",
     recipient: "Srushti",
   },
