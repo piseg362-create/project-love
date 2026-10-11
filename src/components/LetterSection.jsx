@@ -154,10 +154,15 @@ export default function LetterSection() {
               <p className="font-sans text-2xl sm:text-3xl text-rose-700 font-bold mt-1">
                 {letter.signature}
               </p>
+              {letter.footerNote && (
+                <p className="font-serif italic text-rose-900/80 text-sm sm:text-base mt-3">
+                  {letter.footerNote}
+                </p>
+              )}
             </div>
 
             {/* Wax seal simulation */}
-            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-600 to-rose-800 text-rose-100 flex items-center justify-center shadow-lg border-2 border-rose-300/40 select-none">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-600 to-rose-800 text-rose-100 flex items-center justify-center shadow-lg border-2 border-rose-300/40 select-none flex-shrink-0">
               <span className="font-serif font-bold text-base tracking-widest">च & सृ</span>
             </div>
           </div>
