@@ -88,8 +88,8 @@ export default function SweetKissSection() {
                 <Sparkles className="w-3 h-3 text-rose-500" />
                 {kissVideo.dateBadge}
               </span>
-              <span className="text-xs font-serif italic text-stone-400">
-                Srushti's Flying Kiss 💋
+              <span className="text-xs font-serif italic text-stone-500">
+                From Chaitanya with Love 💌
               </span>
             </div>
 
@@ -119,17 +119,21 @@ export default function SweetKissSection() {
                     <Video className="w-8 h-8" />
                   </div>
                   <h4 className="font-serif text-xl sm:text-2xl text-rose-200 font-semibold mb-2">
-                    Srushti's Kiss Video
+                    Chaitanya's Kiss Video
                   </h4>
                   <p className="font-handwriting text-2xl text-rose-300/90 max-w-[240px] mb-4">
-                    “Catching your sweet kiss…”
+                    “Sending you a flying kiss…”
                   </p>
                   <div className="bg-white/10 backdrop-blur-md rounded-xl p-3 text-xs font-sans text-rose-200 border border-rose-400/30 max-w-xs">
                     Drop your video file into:
                     <br />
                     <code className="text-rose-300 font-mono font-semibold">
-                      /public/videos/srushti-kiss.mp4
+                      /public/videos/chaitanya-kiss.mp4
                     </code>
+                    <br />
+                    <span className="text-[11px] text-rose-300/70">
+                      (or name it kiss.mp4)
+                    </span>
                   </div>
                 </div>
               )}

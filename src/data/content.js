@@ -208,14 +208,16 @@ export const siteContent = {
   },
 
   kissVideo: {
-    sectionTag: "A Sweet Memory",
-    heading: "A Moment That Melts My Heart",
-    subheading: "Every time you smile or send a sweet kiss, the world stops for a second.",
-    videoSrc: "/videos/srushti-kiss.mp4",
+    sectionTag: "Sent With Love",
+    heading: "A Flying Kiss Just For You 💋",
+    subheading:
+      "Whenever you need a little smile, feel tired, or miss me, here is a flying kiss from me to you, Srushti.",
+    videoSrc: "/videos/chaitanya-kiss.mp4",
     poster: "/images/hero-srushti.jpg",
-    caption: "That little kiss that never fails to make me blush and smile ❤️",
-    dateBadge: "Pure Sweetness",
-    buttonLabel: "Play Srushti's Kiss 💋",
+    caption:
+      "A little flying kiss sent with all my heart, always reminding you how special you are to me ❤️",
+    dateBadge: "Just For You",
+    buttonLabel: "Play Chaitanya's Kiss 💋",
   },
 
   interactive: {
@@ -225,9 +227,9 @@ export const siteContent = {
     hugButtonText: "A Little Hug for You 🤗",
     hugMessage:
       "Sending you a warm hug, a little peace, and a reminder that you deserve happiness. ❤️",
-    kissButtonText: "A Sweet Kiss from Srushti 💋",
+    kissButtonText: "A Flying Kiss from Chaitanya 💋",
     kissMessage:
-      "Catching your sweet kiss and holding onto it forever in my heart! 😘✨",
+      "Catch my flying kiss and keep it safe in your heart, Srushti! 😘❤️",
     noteButtonText: "Read One More Note 💌",
     additionalNotes: [
       {

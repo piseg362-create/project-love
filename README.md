@@ -57,13 +57,13 @@ All photos are organized in the `/public/images/` folder. Simply copy your actua
 
 ---
 
-## 💋 How to Add Srushti's Kiss Video
+## 💋 How to Add Your Flying Kiss Video for Srushti
 
-To add the video where Srushti sends a sweet kiss:
+To add the video where you send a sweet flying kiss to Srushti:
 1. Copy your video clip into the **`/public/videos/`** folder.
 2. Name the file:
-   **`srushti-kiss.mp4`** *(or `.mov` / `.webm`)*.
-3. The video section will automatically play with custom controls (play/pause, mute/unmute, and fullscreen), with a "Catch The Kiss 💋" interactive reaction button!
+   **`chaitanya-kiss.mp4`** *(or `kiss.mp4` / `.mov` / `.webm`)*.
+3. The video section will automatically play with custom controls (play/pause, mute/unmute, and fullscreen), with a "Catch The Kiss 💋" interactive reaction button for Srushti!
 
 ---
 
