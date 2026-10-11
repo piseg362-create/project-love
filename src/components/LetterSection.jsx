@@ -74,34 +74,34 @@ export default function LetterSection() {
             <span>{letter.sectionTag}</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-semibold text-stone-900 tracking-tight">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight leading-snug px-2">
             {letter.heading}
           </h2>
 
-          <p className="font-sans text-stone-600 text-base sm:text-lg font-light">
+          <p className="font-sans text-stone-600 text-sm sm:text-lg font-light">
             {letter.subheading}
           </p>
         </div>
 
         {/* Parchment Letter Container */}
-        <div className="parchment-paper rounded-3xl p-8 sm:p-14 md:p-16 border border-rose-200/80 shadow-2xl relative overflow-hidden">
+        <div className="parchment-paper rounded-3xl p-5 sm:p-10 md:p-16 border border-rose-200/80 shadow-2xl relative overflow-hidden">
           {/* Subtle corner floral decorations */}
-          <div className="absolute top-6 left-6 text-rose-300 pointer-events-none">
-            <Sparkles className="w-5 h-5 opacity-60" />
+          <div className="absolute top-4 left-4 sm:top-6 sm:left-6 text-rose-300 pointer-events-none">
+            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 opacity-60" />
           </div>
-          <div className="absolute top-6 right-6 text-rose-300 pointer-events-none">
-            <Heart className="w-5 h-5 fill-rose-200 opacity-60" />
+          <div className="absolute top-4 right-4 sm:top-6 sm:right-6 text-rose-300 pointer-events-none">
+            <Heart className="w-4 h-4 sm:w-5 sm:h-5 fill-rose-200 opacity-60" />
           </div>
 
           {/* Letter Salutation */}
-          <div className="mb-8">
-            <h3 className="font-serif text-2xl sm:text-3xl text-rose-950 font-medium italic">
+          <div className="mb-6 sm:mb-8 mt-2 sm:mt-0">
+            <h3 className="font-serif text-xl sm:text-2xl md:text-3xl text-rose-950 font-medium italic">
               {letter.salutation}
             </h3>
           </div>
 
           {/* Letter Body Paragraphs */}
-          <div className="space-y-6 text-stone-800 font-sans text-base sm:text-lg sm:leading-relaxed font-normal">
+          <div className="space-y-5 sm:space-y-6 text-stone-800 font-sans text-sm sm:text-base md:text-lg leading-relaxed sm:leading-loose font-normal break-words">
             {letter.paragraphs.map((para, index) => {
               const isVisible = index < displayedParagraphs;
               

@@ -32,7 +32,7 @@ export default function HeroSection() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-semibold text-stone-900 leading-[1.18] tracking-tight">
+          <h1 className="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-stone-900 leading-[1.2] tracking-tight">
             Some people become a{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-rose-500 relative">
               part of your heart…
@@ -41,15 +41,15 @@ export default function HeroSection() {
           </h1>
 
           {/* Supporting Text */}
-          <p className="font-sans text-base sm:text-xl text-stone-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+          <p className="font-sans text-sm sm:text-lg md:text-xl text-stone-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
             {hero.supportingText}
           </p>
 
           {/* Action Buttons & Animated Heart */}
-          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 pt-2">
             <button
               onClick={() => scrollToSection("timeline")}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-rose-600 text-white font-medium text-base shadow-lg shadow-rose-600/25 hover:bg-rose-700 hover:shadow-xl hover:shadow-rose-600/35 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 sm:py-4 rounded-full bg-rose-600 text-white font-medium text-sm sm:text-base shadow-lg shadow-rose-600/25 hover:bg-rose-700 hover:shadow-xl hover:shadow-rose-600/35 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-300"
             >
               <span>{hero.buttonStoryText}</span>
               <Heart className="w-4 h-4 fill-white stroke-white animate-pulse" />
@@ -57,7 +57,7 @@ export default function HeroSection() {
 
             <button
               onClick={() => scrollToSection("letter")}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-white/80 backdrop-blur-sm text-stone-700 border border-rose-200 font-medium text-base hover:bg-rose-50/80 hover:text-rose-700 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-200"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 sm:px-7 py-3.5 sm:py-4 rounded-full bg-white/80 backdrop-blur-sm text-stone-700 border border-rose-200 font-medium text-sm sm:text-base hover:bg-rose-50/80 hover:text-rose-700 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none focus-visible:ring-4 focus-visible:ring-rose-200"
             >
               <span>{hero.buttonLetterText}</span>
             </button>
@@ -71,8 +71,8 @@ export default function HeroSection() {
         </div>
 
         {/* Right Column: Hero Portrait of Srushti */}
-        <div className="lg:col-span-5 flex justify-center">
-          <div className="relative w-full max-w-sm sm:max-w-md">
+        <div className="lg:col-span-5 flex justify-center w-full">
+          <div className="relative w-full max-w-[280px] sm:max-w-sm lg:max-w-md">
             {/* Glowing Backdrop */}
             <div className="absolute -inset-3 bg-gradient-to-tr from-rose-300/40 via-blush-200/50 to-amber-100/40 rounded-[2.5rem] blur-xl opacity-80" />
 

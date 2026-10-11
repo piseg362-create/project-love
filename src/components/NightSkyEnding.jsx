@@ -65,12 +65,12 @@ export default function NightSkyEnding() {
         </div>
 
         {/* Ending Quote */}
-        <h2 className="font-serif text-2xl sm:text-4xl text-rose-100 font-normal leading-relaxed tracking-tight max-w-2xl mx-auto">
+        <h2 className="font-serif text-xl sm:text-3xl md:text-4xl text-rose-100 font-normal leading-relaxed tracking-tight max-w-2xl mx-auto px-2">
           “{ending.quote}”
         </h2>
 
         {/* Subtext */}
-        <p className="font-serif italic text-lg sm:text-xl text-rose-300/80 font-light max-w-xl mx-auto">
+        <p className="font-serif italic text-base sm:text-xl text-rose-300/80 font-light max-w-xl mx-auto px-2">
           {ending.subtext}
         </p>
 

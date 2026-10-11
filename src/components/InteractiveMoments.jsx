@@ -44,17 +44,17 @@ export default function InteractiveMoments() {
             <span>{interactive.sectionTag}</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-semibold text-stone-900 tracking-tight">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight">
             {interactive.heading}
           </h2>
 
-          <p className="font-sans text-stone-600 text-base sm:text-lg font-light">
+          <p className="font-sans text-stone-600 text-sm sm:text-lg font-light">
             {interactive.subheading}
           </p>
         </div>
 
         {/* Action Buttons Box */}
-        <div className="glass-card rounded-3xl p-8 sm:p-12 border border-rose-200/80 shadow-lg relative overflow-hidden">
+        <div className="glass-card rounded-3xl p-5 sm:p-10 md:p-12 border border-rose-200/80 shadow-lg relative overflow-hidden">
           {/* Subtle floating heart burst overlay */}
           {floatingHearts.map((h) => (
             <div
@@ -138,7 +138,7 @@ export default function InteractiveMoments() {
           onClick={() => setActiveNoteIndex(null)}
         >
           <div
-            className="parchment-paper rounded-3xl p-8 sm:p-10 max-w-md w-full border border-rose-200 shadow-2xl relative"
+            className="parchment-paper rounded-3xl p-6 sm:p-10 max-w-md w-full border border-rose-200 shadow-2xl relative max-h-[88vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             <button

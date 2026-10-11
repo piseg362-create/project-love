@@ -67,17 +67,17 @@ export default function SweetKissSection() {
             <span>{kissVideo.sectionTag}</span>
           </div>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-semibold text-stone-900 tracking-tight">
+          <h2 className="font-serif text-2xl sm:text-4xl md:text-5xl font-semibold text-stone-900 tracking-tight">
             {kissVideo.heading}
           </h2>
 
-          <p className="font-sans text-stone-600 text-base sm:text-lg font-light">
+          <p className="font-sans text-stone-600 text-sm sm:text-lg font-light">
             {kissVideo.subheading}
           </p>
         </div>
 
         {/* Video Frame Showcase */}
-        <div className="relative max-w-sm sm:max-w-md mx-auto">
+        <div className="relative max-w-[300px] sm:max-w-xs md:max-w-sm mx-auto">
           {/* Glowing Aura */}
           <div className="absolute -inset-3 bg-gradient-to-tr from-rose-400/30 via-blush-300/40 to-amber-200/30 rounded-[2.5rem] blur-xl opacity-90" />
 

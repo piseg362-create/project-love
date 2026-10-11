@@ -134,10 +134,10 @@ export default function MusicPlayer({ autoPlay = false }) {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end max-w-[calc(100vw-2rem)]">
       {/* Expanded Floating Music Card */}
       {isExpanded && (
-        <div className="mb-3 w-80 sm:w-96 glass-card rounded-3xl p-5 border border-rose-200/90 shadow-2xl animate-fade-in relative overflow-hidden backdrop-blur-xl">
+        <div className="mb-3 w-[calc(100vw-2rem)] max-w-sm sm:w-96 glass-card rounded-3xl p-4 sm:p-5 border border-rose-200/90 shadow-2xl animate-fade-in relative overflow-hidden backdrop-blur-xl">
           {/* Header */}
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
